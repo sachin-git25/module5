@@ -1,7 +1,16 @@
-<html>
-    <body>
-        <p>Welcome to the Hood !! </p>
-        <p>Click <a href="module5/secret.html">here</a> to see the secret page</p>
-        <p>Click <a href="module5/secret2.html">here</a> to see the secret page 2</p>
+<html ng-app="myApp">
+    <head> 
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-controller="myController">
+        <div>
+            <input type="text" ng-model="foodname" ng-blur="toCap();"></input>
+        <div>
+            <button ng-click="photoChange()"> Feed Me to change the picture</button>
+            <img ng-src="{{photochange}}-sachin.png width=300 height=300">
+        </div>
+        </div>
     </body>
+    <footer></footer>
 </html>
